@@ -1,0 +1,144 @@
+/* RESET / BASIC */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1 0 auto;
+}
+
+/* HEADER / PROFILE SECTION */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    background-color: #333;
+    overflow: hidden;
+    border: 4px solid #fff;
+}
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* GENERAL LINKS (MUSIC + SOCIAL) */
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #222;
+    overflow: hidden;
+}
+
+.links a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* RELEASE IMAGE & PREORDER BUTTON */
+.release-container {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.release-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: #333;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border: 4px solid #eadcd5;
+}
+
+.release-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.preorder-btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 20px;
+    background-color: #eadcd5;
+    color: #000;
+    text-decoration: none;
+    border-radius: 0;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.preorder-btn:hover {
+    background-color: #aaa;
+}
+
+/* CONTACT / SOCIAL LINKS */
+.contact {
+    margin: 40px 0 20px 0;
+}
+
+.contact h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    background: linear-gradient(to right, #d99f3e, #f5c370);
+    box-shadow: 0 -10px 20px rgba(217, 159, 62, 0.2);
+    color: #fff;
+    padding: 10px 0;
+    flex-shrink: 0;
+    font-size: 0.9em;
+    font-weight: bold;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
