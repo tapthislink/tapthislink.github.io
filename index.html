@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bazgrov - Tour DJ / Club DJ</title>
+    <style>
+        /* RESET / BASIC */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1 0 auto;
+        }
+
+        /* HEADER / PROFILE SECTION */
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 15px auto;
+            background-color: #333;
+            /* Placeholder background */
+            /* CHANGE THIS LINE TO YOUR ARTIST'S PROFILE IMAGE */
+            background-image: url("path-to-your-profile-image.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 1em;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        /* GENERAL LINKS (MUSIC + SOCIAL) */
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #222;
+            /* Placeholder color */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /*
+      EXAMPLE PLACEHOLDERS FOR MUSIC SERVICES:
+      Replace with real icons or images in the CSS background-image.
+    */
+        .spotify {
+            background-image: url("path-to-spotify-icon.png");
+        }
+
+        .apple {
+            background-image: url("path-to-apple-music-icon.png");
+        }
+
+        .deezer {
+            background-image: url("path-to-deezer-icon.png");
+        }
+
+        .tidal {
+            background-image: url("path-to-tidal-icon.png");
+        }
+
+        .youtube {
+            background-image: url("path-to-youtube-icon.png");
+        }
+
+        /* RELEASE IMAGE & PREORDER BUTTON */
+        .release-container {
+            margin-bottom: 25px;
+        }
+
+        .release-image {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            background-color: #333;
+            /* Placeholder background */
+            /* CHANGE THIS TO YOUR RELEASE COVER IMAGE */
+            background-image: url("path-to-sansara-cover.jpg");
+            background-size: cover;
+            background-position: center;
+            aspect-ratio: 1 / 1;
+            /* Or use a fixed height, e.g. height: 300px; */
+        }
+
+        .preorder-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ccc;
+            color: #000;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .preorder-btn:hover {
+            background-color: #aaa;
+        }
+
+        /* CONTACT / SOCIAL LINKS */
+        .contact {
+            margin: 40px 0 20px 0;
+        }
+
+        .contact h2 {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        /* PLACEHOLDERS FOR SOCIAL ICONS (SAME IDEA) */
+        .instagram {
+            background-image: url("path-to-instagram-icon.png");
+        }
+
+        .facebook {
+            background-image: url("path-to-facebook-icon.png");
+        }
+
+        .whatsapp {
+            background-image: url("path-to-whatsapp-icon.png");
+        }
+
+        .email {
+            background-image: url("path-to-email-icon.png");
+        }
+
+        /* FOOTER OR TAGLINE WITH GOLD GRADIENT */
+        .footer {
+            text-align: center;
+            background: linear-gradient(to right, #d99f3e, #f5c370);
+            /* Example gold gradient */
+            color: #fff;
+            padding: 10px 0;
+            flex-shrink: 0;
+            font-size: 0.9em;
+            font-weight: bold;
+            position: sticky;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- PROFILE SECTION -->
+        <div class="profile-image"></div>
+        <h1>Bazgrov</h1>
+        <div class="subtitle">Tour DJ / Club DJ</div>
+
+        <!-- MUSIC LINKS -->
+        <div class="links">
+            <a href="https://placeholder-link-spotify.com" class="spotify" target="_blank" rel="noopener"></a>
+            <a href="https://placeholder-link-apple.com" class="apple" target="_blank" rel="noopener"></a>
+            <a href="https://placeholder-link-deezer.com" class="deezer" target="_blank" rel="noopener"></a>
+            <a href="https://placeholder-link-tidal.com" class="tidal" target="_blank" rel="noopener"></a>
+            <a href="https://placeholder-link-youtube.com" class="youtube" target="_blank" rel="noopener"></a>
+        </div>
+
+        <!-- RELEASE / EP SECTION -->
+        <div class="release-container">
+            <div class="release-image"></div>
+            <a href="https://placeholder-preorder-ep.com" target="_blank" rel="noopener" class="preorder-btn">
+                Preorder EP
+            </a>
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <div class="contact">
+            <h2>Follow & Contact</h2>
+            <div class="links">
+                <a href="https://placeholder-instagram.com" class="instagram" target="_blank" rel="noopener"></a>
+                <a href="https://placeholder-facebook.com" class="facebook" target="_blank" rel="noopener"></a>
+                <a href="https://placeholder-whatsapp.com" class="whatsapp" target="_blank" rel="noopener"></a>
+                <a href="mailto:placeholder-email@example.com" class="email"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        Powered by TapThisLink
+    </div>
+
+</body>
+
+</html>
